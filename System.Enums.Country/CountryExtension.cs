@@ -1,489 +1,269 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
 using System.Globalization;
-using System.Text;
+using System.Linq;
 
 namespace System.Enums
 {
+    /// <summary>
+    /// Class CountryExtension.
+    /// </summary>
     public static class CountryExtension
     {
-        public static string Description<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the official state name for the country using the data supplied at https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string Description(this Country country)
         {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
+            var genericEnumType = country.GetType();
+            var memberInfo = genericEnumType.GetMember(country.ToString());
+            if ((memberInfo.Length <= 0)) return country.ToString();
+            var customAttributes = memberInfo[0].GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
+            return customAttributes.Any() ? ((System.ComponentModel.DescriptionAttribute)customAttributes.ElementAt(0)).Description : country.ToString();
+        }
 
-            if (attributes.Length > 0)
+        /// <summary>
+        /// Gets the name for the country using the data supplied at https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string Name(this Country country)
+        {
+            switch (country)
             {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                return attributes[0].Description;
-
-            }
-            return source.ToString();
-        }
-
-        public static string Name<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                //NamePlaceholder
+                default:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //NamePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
             }
-            return string.Empty;
         }
 
-        public static string Alpha2Code<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the ISO 3166-1 alpha-2 country codes as defined in ISO 3166-1.
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string Alpha2Code(this Country country)
         {
-            if (source == null)
+            switch (country)
             {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //Alpha2CodePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
-            }
-            return string.Empty;
-        }
-
-        public static string Alpha3Code<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                //Alpha2CodePlaceholder
+                default:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //Alpha3CodePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
             }
-            return string.Empty;
         }
 
-        public static string NumericCode<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the ISO 3166-1 alpha-3 country codes as defined in ISO 3166-1
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string Alpha3Code(this Country country)
         {
-            if (source == null)
+            switch (country)
             {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //NumericCodePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
-            }
-            return string.Empty;
-        }
-
-        public static string CountryDataURIImage<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                //Alpha3CodePlaceholder
+                default:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //CountryDataURIImagePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
             }
-            return string.Empty;
         }
 
-        public static string CountryDialingCode<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the ISO 3166-1 numeric codes as defined in ISO 3166-1
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string NumericCode(this Country country)
         {
-            if (source == null)
+            switch (country)
             {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //CountryDialingCodePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
-            }
-            return string.Empty;
-        }
-
-        public static string CurrencySymbol<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                //NumericCodePlaceholder
+                default:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //CurrencySymbolPlaceholder
-                    default:
-                        return string.Empty;
-                }
-
             }
-            return string.Empty;
         }
 
-        public static string CurrencyName<TCountry>(this TCountry source)
+        /// <summary>
+        /// The country data URI scheme to provide the actual content of the resource in the URI.
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string DataURIImage(this Country country)
         {
-            if (source == null)
+            switch (country)
             {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //CurrencyNamePlaceholder
-                    default:
-                        return string.Empty;
-                }
-
-            }
-            return string.Empty;
-        }
-
-        public static System.Enums.Continent Continent<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return System.Enums.Continent.NotSet;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return System.Enums.Continent.NotSet;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
-                    return System.Enums.Continent.NotSet;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //ContinentPlaceholder
-                    default:
-                        return System.Enums.Continent.NotSet;
-                }
-
-            }
-            return System.Enums.Continent.NotSet;
-        }
-
-        public static string PostalCodeFormat<TCountry>(this TCountry source)
-        {
-            if (source == null)
-            {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                //DataURIImagePlaceholder
+                default:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //PostalCodeFormatPlaceholder
-                    default:
-                        return string.Empty;
-                }
-
             }
-            return string.Empty;
         }
 
-        public static string PostalCodeRegex<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the country calling codes or country dial-in codes are telephone number prefixes  for reaching telephone subscribers
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string DialingCode(this Country country)
         {
-            if (source == null)
+            switch (country)
             {
-                return string.Empty;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return string.Empty;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
                     return string.Empty;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //PostalCodeRegexPlaceholder
-                    default:
-                        return string.Empty;
-                }
-
+                //CountryDialingCodePlaceholder
+                default:
+                    return string.Empty;
             }
-            return string.Empty;
         }
 
-        public static DateTimeFormatInfo DateTimeFormat<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the country currency symbol as defined in the ISO 4217 standard which delineates currency designators.
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string CurrencySymbol(this Country country)
         {
-            var culture = new CultureInfo("EN");
-            if (source == null)
+            switch (country)
             {
-                return culture.DateTimeFormat;
+                case Country.NotSet:
+                    return string.Empty;
+                //CurrencySymbolPlaceholder
+                default:
+                    return string.Empty;
             }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return culture.DateTimeFormat;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
+        }
 
-            if (attributes.Length > 0)
+        /// <summary>
+        /// "The countries currency name
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string CurrencyName(this Country country)
+        {
+            switch (country)
             {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
+                    return string.Empty;
+                //CurrencyNamePlaceholder
+                default:
+                    return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Gets the Continent the country is situated in.
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.Enums.Continent.</returns>
+        public static System.Enums.Continent Continent(this Country country)
+        {
+            switch (country)
+            {
+                case Country.NotSet:
+                    return Enums.Continent.NotSet;
+                //ContinentPlaceholder
+                default:
+                    return Enums.Continent.NotSet;
+            }
+        }
+
+        /// <summary>
+        /// Gets the countries postal code format as defined by the Area format at https://en.wikipedia.org/wiki/List_of_postal_codes
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string PostalCodeFormat(this Country country)
+        {
+            switch (country)
+            {
+                case Country.NotSet:
+                    return string.Empty;
+                //PostalCodeFormatPlaceholder
+                default:
+                    return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// The countries post code regular expression
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>System.String.</returns>
+        public static string PostalCodeRegex(this Country country)
+        {
+            switch (country)
+            {
+                case Country.NotSet:
+                    return string.Empty;
+                //PostalCodeRegexPlaceholder
+                default:
+                    return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Gets culture specific information about the format of date and time values used by the country
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>DateTimeFormatInfo.</returns>
+        public static DateTimeFormatInfo DateTimeFormat(this Country country)
+        {
+            switch (country)
+            {
+                case Country.NotSet:
+                    var culture = new CultureInfo("EN");
                     return culture.DateTimeFormat;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //DateTimeFormatPlaceholder
-                    default:
-                        return culture.DateTimeFormat;
-                }
-
+                //DateTimeFormatPlaceholder
+                default:
+                    culture = new CultureInfo("EN");
+                    return culture.DateTimeFormat;
             }
-            return culture.DateTimeFormat;
         }
 
-        public static Calendar Calendar<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets a calendar that represents the divisions, such as weeks, months and years used by the country
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>Calendar.</returns>
+        public static Calendar Calendar(this Country country)
         {
-            var culture = new CultureInfo("EN");
-            if (source == null)
+            switch (country)
             {
-                return culture.Calendar;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return culture.Calendar;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
+                    var culture = new CultureInfo("EN");
                     return culture.Calendar;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //CalendarPlaceholder
-                    default:
-                        return culture.Calendar;
-                }
-
+                //CalendarPlaceholder
+                default:
+                    culture = new CultureInfo("EN");
+                    return culture.Calendar;
             }
-            return culture.Calendar;
         }
 
-        public static NumberFormatInfo NumberFormat<TCountry>(this TCountry source)
+        /// <summary>
+        /// Gets the appropriate format for displaying numbers, currency and percentages used by the country
+        /// </summary>
+        /// <param name="country">The country.</param>
+        /// <returns>NumberFormatInfo.</returns>
+        public static NumberFormatInfo NumberFormat(this Country country)
         {
-            var culture = new CultureInfo("EN");
-            if (source == null)
+            switch (country)
             {
-                return culture.NumberFormat;
-            }
-            var fi = source.GetType().GetField(source.ToString());
-            if (fi == null)
-            {
-                return culture.NumberFormat;
-            }
-            var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(
-                typeof(DescriptionAttribute), false);
-
-            if (attributes.Length > 0)
-            {
-                if (attributes[0].Description == null)
-                {
+                case Country.NotSet:
+                    var culture = new CultureInfo("EN");
                     return culture.NumberFormat;
-                }
-                var attributeDesc = attributes[0].Description;
-                switch (attributeDesc)
-                {
-                    //NumberFormatPlaceholder
-                    default:
-                        return culture.NumberFormat;
-                }
-
+                //NumberFormatPlaceholder
+                default:
+                    culture = new CultureInfo("EN");
+                    return culture.NumberFormat;
             }
-            return culture.NumberFormat;
         }
 
     }
