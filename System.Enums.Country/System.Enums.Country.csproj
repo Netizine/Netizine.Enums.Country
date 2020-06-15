@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>James Melvin</Authors>
+    <Company>Netizine</Company>
+    <Description>A country enum helper</Description>
+  </PropertyGroup>
+
+</Project>
