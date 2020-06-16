@@ -20,9 +20,9 @@ namespace System.Enums
             var memberInfo = genericEnumType.GetMember(country.ToString());
             if ((memberInfo.Length <= 0)) return country.ToString();
             var customAttributes =
-                memberInfo[0].GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
+                memberInfo[0].GetCustomAttributes(typeof(ComponentModel.DescriptionAttribute), false);
             return customAttributes.Any()
-                ? ((System.ComponentModel.DescriptionAttribute) customAttributes.ElementAt(0)).Description
+                ? ((ComponentModel.DescriptionAttribute) customAttributes.ElementAt(0)).Description
                 : country.ToString();
         }
 
@@ -4305,510 +4305,510 @@ namespace System.Enums
         /// </summary>
         /// <param name="country">The specified country.</param>
         /// <returns>System.Enums.Continent.</returns>
-        public static System.Enums.Continent Continent(this Country country)
+        public static Continent Continent(this Country country)
         {
             switch (country)
             {
                 case Country.NotSet:
                     return Enums.Continent.NotSet;
                                     case Country.Afghanistan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.AlandIslands:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Albania:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Algeria:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.AmericanSamoa:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Andorra:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Angola:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Anguilla:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Antarctica:
-                        return System.Enums.Continent.Antarctica;
+                        return Enums.Continent.Antarctica;
                     case Country.AntiguaAndBarbuda:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Argentina:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Armenia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Aruba:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Australia:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Austria:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Azerbaijan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Bahamas:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Bahrain:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Bangladesh:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Barbados:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Belarus:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Belgium:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Belize:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Benin:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Bermuda:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Bhutan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.BoliviaPlurinationalState:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Bonaire:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.BosniaAndHerzegovina:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Botswana:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.BouvetIsland:
-                        return System.Enums.Continent.Antarctica;
+                        return Enums.Continent.Antarctica;
                     case Country.Brazil:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.BritishIndianOceanTerritory:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.BruneiDarussalam:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Bulgaria:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.BurkinaFaso:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Burundi:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.CaboVerde:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Cambodia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Cameroon:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Canada:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.CaymanIslands:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.CentralAfricanRepublic:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Chad:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Chile:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.China:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.ChristmasIsland:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.CocosKeelingIslands:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Colombia:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Comoros:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.CongoTheDemocraticRepublic:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Congo:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.CookIslands:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.CostaRica:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.CotedIvoire:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Croatia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Cuba:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Curacao:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Cyprus:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Czechia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Denmark:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Djibouti:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Dominica:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.DominicanRepublic:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Ecuador:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Egypt:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.ElSalvador:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.EquatorialGuinea:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Eritrea:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Estonia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Eswatini:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Ethiopia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.FalklandIslandsTheMalvinas:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.FaroeIslands:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Fiji:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Finland:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.France:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.FrenchGuiana:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.FrenchPolynesia:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.FrenchSouthernTerritories:
-                        return System.Enums.Continent.Antarctica;
+                        return Enums.Continent.Antarctica;
                     case Country.Gabon:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Gambia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Georgia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Germany:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Ghana:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Gibraltar:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Greece:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Greenland:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Grenada:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Guadeloupe:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Guam:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Guatemala:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Guernsey:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Guinea:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.GuineaBissau:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Guyana:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Haiti:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.HeardIslandAndMcDonaldIslands:
-                        return System.Enums.Continent.Antarctica;
+                        return Enums.Continent.Antarctica;
                     case Country.HolySee:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Honduras:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.HongKong:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Hungary:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Iceland:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.India:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Indonesia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.IranIslamicRepublic:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Iraq:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Ireland:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.IsleOfMan:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Israel:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Italy:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Jamaica:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Japan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Jersey:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Jordan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Kazakhstan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Kenya:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Kiribati:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.KoreaTheDemocraticPeoplesRepublic:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.KoreaTheRepublic:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Kuwait:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Kyrgyzstan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.LaoPeoplesDemocraticRepublic:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Latvia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Lebanon:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Lesotho:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Liberia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Libya:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Liechtenstein:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Lithuania:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Luxembourg:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Macao:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.NorthMacedonia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Madagascar:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Malawi:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Malaysia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Maldives:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Mali:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Malta:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.MarshallIslands:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Martinique:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Mauritania:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Mauritius:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Mayotte:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Mexico:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.MicronesiaFederatedStates:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.MoldovaTheRepublic:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Monaco:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Mongolia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Montenegro:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Montserrat:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Morocco:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Mozambique:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Myanmar:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Namibia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Nauru:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Nepal:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Netherlands:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.NewCaledonia:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.NewZealand:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Nicaragua:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Niger:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Nigeria:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Niue:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.NorfolkIsland:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.NorthernMarianaIslands:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Norway:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Oman:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Pakistan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Palau:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.PalestineState:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Panama:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.PapuaNewGuinea:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Paraguay:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Peru:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Philippines:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Pitcairn:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Poland:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Portugal:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.PuertoRico:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Qatar:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Reunion:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Romania:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.RussianFederation:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Rwanda:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SaintBarthelemy:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.SaintHelena:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SaintKittsandNevis:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.SaintLucia:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.SaintMartinFrenchPart:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.SaintPierreAndMiquelon:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.SaintVincentAndTheGrenadines:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Samoa:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.SanMarino:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.SaoTomeAndPrincipe:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SaudiArabia:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Senegal:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Serbia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Seychelles:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SierraLeone:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Singapore:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.SintMaartenDutchPart:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Slovakia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Slovenia:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.SolomonIslands:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Somalia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SouthAfrica:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.SouthGeorgiaAndTheSouthSandwichIslands:
-                        return System.Enums.Continent.Antarctica;
+                        return Enums.Continent.Antarctica;
                     case Country.SouthSudan:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Spain:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.SriLanka:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Sudan:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Suriname:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Svalbard:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Sweden:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.Switzerland:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.SyrianArabRepublic:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.TaiwanProvinceOfChina:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Tajikistan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.TanzaniaTheUnitedRepublic:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Thailand:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.TimorLeste:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Togo:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Tokelau:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Tonga:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.TrinidadAndTobago:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Tunisia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Turkey:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Turkmenistan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.TurksAndCaicosIslands:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Tuvalu:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.Uganda:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Ukraine:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.UnitedArabEmirates:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.UnitedKingdom:
-                        return System.Enums.Continent.Europe;
+                        return Enums.Continent.Europe;
                     case Country.UnitedStatesMinorOutlyingIslands:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.UnitedStatesOfAmerica:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.Uruguay:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.Uzbekistan:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Vanuatu:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.VenezuelaBolivarianRepublic:
-                        return System.Enums.Continent.SouthAmerica;
+                        return Enums.Continent.SouthAmerica;
                     case Country.VietNam:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.VirginIslandsBritish:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.VirginIslandsUS:
-                        return System.Enums.Continent.NorthAmerica;
+                        return Enums.Continent.NorthAmerica;
                     case Country.WallisAndFutuna:
-                        return System.Enums.Continent.Oceania;
+                        return Enums.Continent.Oceania;
                     case Country.WesternSahara:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Yemen:
-                        return System.Enums.Continent.Asia;
+                        return Enums.Continent.Asia;
                     case Country.Zambia:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
                     case Country.Zimbabwe:
-                        return System.Enums.Continent.Africa;
+                        return Enums.Continent.Africa;
 
                 
                 default:
