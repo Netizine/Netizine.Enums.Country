@@ -4,7 +4,7 @@ Created from the country data exttracted from [Wikipedia](https://en.wikipedia.o
 
 Using Netizine.Enums.Country
 ------------------------------
-To use the country enum in your project, add the [Netizine.Enums.Country](https://www.nuget.org/packages/Netizine.Enums.Country) NuGet package to your project.
+To use the country enum in your project, add the [Netizine.Enums.Country](https://www.nuget.org/packages/Netizine.Enums.Country/1.0.1) NuGet package to your project.
 ------------------------------
 
 Provides a few extension methods to easilly access country name, decription, state name, ISO 3166-1 codes such as the Alpha-2, Alpha-3 and Numeric codes etc as show below.
