@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Runtime.Serialization;
 using Newtonsoft.Json;
 
 namespace System.Enums
@@ -12,754 +13,754 @@ namespace System.Enums
         /// <summary>
         /// The default when the country is not set
         /// </summary>
-        [JsonProperty("notSet")]
+        [EnumMember(Value = "notSet")]
         [Description("Not Set")]
         NotSet = 0,
-        [JsonProperty("afghanistan")]
+        [EnumMember(Value = "afghanistan")]
         [Description("The Islamic Republic of Afghanistan")]
         Afghanistan = 1,
-        [JsonProperty("alandIslands")]
+        [EnumMember(Value = "alandIslands")]
         [Description("Åland")]
         AlandIslands = 2,
-        [JsonProperty("albania")]
+        [EnumMember(Value = "albania")]
         [Description("The Republic of Albania")]
         Albania = 3,
-        [JsonProperty("algeria")]
+        [EnumMember(Value = "algeria")]
         [Description("The People's Democratic Republic of Algeria")]
         Algeria = 4,
-        [JsonProperty("americanSamoa")]
+        [EnumMember(Value = "americanSamoa")]
         [Description("The Territory of American Samoa")]
         AmericanSamoa = 5,
-        [JsonProperty("andorra")]
+        [EnumMember(Value = "andorra")]
         [Description("The Principality of Andorra")]
         Andorra = 6,
-        [JsonProperty("angola")]
+        [EnumMember(Value = "angola")]
         [Description("The Republic of Angola")]
         Angola = 7,
-        [JsonProperty("anguilla")]
+        [EnumMember(Value = "anguilla")]
         [Description("Anguilla")]
         Anguilla = 8,
-        [JsonProperty("antarctica")]
+        [EnumMember(Value = "antarctica")]
         [Description("60th parallel south")]
         Antarctica = 9,
-        [JsonProperty("antiguaAndBarbuda")]
+        [EnumMember(Value = "antiguaAndBarbuda")]
         [Description("Antigua and Barbuda")]
         AntiguaAndBarbuda = 10,
-        [JsonProperty("argentina")]
+        [EnumMember(Value = "argentina")]
         [Description("The Argentine Republic")]
         Argentina = 11,
-        [JsonProperty("armenia")]
+        [EnumMember(Value = "armenia")]
         [Description("The Republic of Armenia")]
         Armenia = 12,
-        [JsonProperty("aruba")]
+        [EnumMember(Value = "aruba")]
         [Description("Aruba")]
         Aruba = 13,
-        [JsonProperty("australia")]
+        [EnumMember(Value = "australia")]
         [Description("The Commonwealth of Australia")]
         Australia = 14,
-        [JsonProperty("austria")]
+        [EnumMember(Value = "austria")]
         [Description("The Republic of Austria")]
         Austria = 15,
-        [JsonProperty("azerbaijan")]
+        [EnumMember(Value = "azerbaijan")]
         [Description("The Republic of Azerbaijan")]
         Azerbaijan = 16,
-        [JsonProperty("bahamas")]
+        [EnumMember(Value = "bahamas")]
         [Description("The Commonwealth of The Bahamas")]
         Bahamas = 17,
-        [JsonProperty("bahrain")]
+        [EnumMember(Value = "bahrain")]
         [Description("The Kingdom of Bahrain")]
         Bahrain = 18,
-        [JsonProperty("bangladesh")]
+        [EnumMember(Value = "bangladesh")]
         [Description("The People's Republic of Bangladesh")]
         Bangladesh = 19,
-        [JsonProperty("barbados")]
+        [EnumMember(Value = "barbados")]
         [Description("Barbados")]
         Barbados = 20,
-        [JsonProperty("belarus")]
+        [EnumMember(Value = "belarus")]
         [Description("The Republic of Belarus")]
         Belarus = 21,
-        [JsonProperty("belgium")]
+        [EnumMember(Value = "belgium")]
         [Description("The Kingdom of Belgium")]
         Belgium = 22,
-        [JsonProperty("belize")]
+        [EnumMember(Value = "belize")]
         [Description("Belize")]
         Belize = 23,
-        [JsonProperty("benin")]
+        [EnumMember(Value = "benin")]
         [Description("The Republic of Benin")]
         Benin = 24,
-        [JsonProperty("bermuda")]
+        [EnumMember(Value = "bermuda")]
         [Description("Bermuda")]
         Bermuda = 25,
-        [JsonProperty("bhutan")]
+        [EnumMember(Value = "bhutan")]
         [Description("The Kingdom of Bhutan")]
         Bhutan = 26,
-        [JsonProperty("boliviaPlurinationalState")]
+        [EnumMember(Value = "boliviaPlurinationalState")]
         [Description("The Plurinational State of Bolivia")]
         BoliviaPlurinationalState = 27,
-        [JsonProperty("bonaire")]
+        [EnumMember(Value = "bonaire")]
         [Description("Bonaire, Sint Eustatius and Saba")]
         Bonaire = 28,
-        [JsonProperty("bosniaAndHerzegovina")]
+        [EnumMember(Value = "bosniaAndHerzegovina")]
         [Description("Bosnia and Herzegovina")]
         BosniaAndHerzegovina = 29,
-        [JsonProperty("botswana")]
+        [EnumMember(Value = "botswana")]
         [Description("The Republic of Botswana")]
         Botswana = 30,
-        [JsonProperty("bouvetIsland")]
+        [EnumMember(Value = "bouvetIsland")]
         [Description("Bouvet Island")]
         BouvetIsland = 31,
-        [JsonProperty("brazil")]
+        [EnumMember(Value = "brazil")]
         [Description("The Federative Republic of Brazil")]
         Brazil = 32,
-        [JsonProperty("britishIndianOceanTerritory")]
+        [EnumMember(Value = "britishIndianOceanTerritory")]
         [Description("The British Indian Ocean Territory")]
         BritishIndianOceanTerritory = 33,
-        [JsonProperty("bruneiDarussalam")]
+        [EnumMember(Value = "bruneiDarussalam")]
         [Description("The Nation of Brunei, the Abode of Peace")]
         BruneiDarussalam = 34,
-        [JsonProperty("bulgaria")]
+        [EnumMember(Value = "bulgaria")]
         [Description("The Republic of Bulgaria")]
         Bulgaria = 35,
-        [JsonProperty("burkinaFaso")]
+        [EnumMember(Value = "burkinaFaso")]
         [Description("Burkina Faso")]
         BurkinaFaso = 36,
-        [JsonProperty("burundi")]
+        [EnumMember(Value = "burundi")]
         [Description("The Republic of Burundi")]
         Burundi = 37,
-        [JsonProperty("caboVerde")]
+        [EnumMember(Value = "caboVerde")]
         [Description("The Republic of Cabo Verde")]
         CaboVerde = 38,
-        [JsonProperty("cambodia")]
+        [EnumMember(Value = "cambodia")]
         [Description("The Kingdom of Cambodia")]
         Cambodia = 39,
-        [JsonProperty("cameroon")]
+        [EnumMember(Value = "cameroon")]
         [Description("The Republic of Cameroon")]
         Cameroon = 40,
-        [JsonProperty("canada")]
+        [EnumMember(Value = "canada")]
         [Description("Canada")]
         Canada = 41,
-        [JsonProperty("caymanIslands")]
+        [EnumMember(Value = "caymanIslands")]
         [Description("The Cayman Islands")]
         CaymanIslands = 42,
-        [JsonProperty("centralAfricanRepublic")]
+        [EnumMember(Value = "centralAfricanRepublic")]
         [Description("The Central African Republic")]
         CentralAfricanRepublic = 43,
-        [JsonProperty("chad")]
+        [EnumMember(Value = "chad")]
         [Description("The Republic of Chad")]
         Chad = 44,
-        [JsonProperty("chile")]
+        [EnumMember(Value = "chile")]
         [Description("The Republic of Chile")]
         Chile = 45,
-        [JsonProperty("china")]
+        [EnumMember(Value = "china")]
         [Description("The People's Republic of China")]
         China = 46,
-        [JsonProperty("christmasIsland")]
+        [EnumMember(Value = "christmasIsland")]
         [Description("The Territory of Christmas Island")]
         ChristmasIsland = 47,
-        [JsonProperty("cocosKeelingIslands")]
+        [EnumMember(Value = "cocosKeelingIslands")]
         [Description("The Territory of Cocos (Keeling) Islands")]
         CocosKeelingIslands = 48,
-        [JsonProperty("colombia")]
+        [EnumMember(Value = "colombia")]
         [Description("The Republic of Colombia")]
         Colombia = 49,
-        [JsonProperty("comoros")]
+        [EnumMember(Value = "comoros")]
         [Description("The Union of the Comoros")]
         Comoros = 50,
-        [JsonProperty("congoTheDemocraticRepublic")]
+        [EnumMember(Value = "congoTheDemocraticRepublic")]
         [Description("The Democratic Republic of the Congo")]
         CongoTheDemocraticRepublic = 51,
-        [JsonProperty("congo")]
+        [EnumMember(Value = "congo")]
         [Description("The Republic of the Congo")]
         Congo = 52,
-        [JsonProperty("cookIslands")]
+        [EnumMember(Value = "cookIslands")]
         [Description("The Cook Islands")]
         CookIslands = 53,
-        [JsonProperty("costaRica")]
+        [EnumMember(Value = "costaRica")]
         [Description("The Republic of Costa Rica")]
         CostaRica = 54,
-        [JsonProperty("cotedIvoire")]
+        [EnumMember(Value = "cotedIvoire")]
         [Description("The Republic of Côte d'Ivoire")]
         CotedIvoire = 55,
-        [JsonProperty("croatia")]
+        [EnumMember(Value = "croatia")]
         [Description("The Republic of Croatia")]
         Croatia = 56,
-        [JsonProperty("cuba")]
+        [EnumMember(Value = "cuba")]
         [Description("The Republic of Cuba")]
         Cuba = 57,
-        [JsonProperty("curacao")]
+        [EnumMember(Value = "curacao")]
         [Description("The Country of Curaçao")]
         Curacao = 58,
-        [JsonProperty("cyprus")]
+        [EnumMember(Value = "cyprus")]
         [Description("The Republic of Cyprus")]
         Cyprus = 59,
-        [JsonProperty("czechia")]
+        [EnumMember(Value = "czechia")]
         [Description("The Czech Republic")]
         Czechia = 60,
-        [JsonProperty("denmark")]
+        [EnumMember(Value = "denmark")]
         [Description("The Kingdom of Denmark")]
         Denmark = 61,
-        [JsonProperty("djibouti")]
+        [EnumMember(Value = "djibouti")]
         [Description("The Republic of Djibouti")]
         Djibouti = 62,
-        [JsonProperty("dominica")]
+        [EnumMember(Value = "dominica")]
         [Description("The Commonwealth of Dominica")]
         Dominica = 63,
-        [JsonProperty("dominicanRepublic")]
+        [EnumMember(Value = "dominicanRepublic")]
         [Description("The Dominican Republic")]
         DominicanRepublic = 64,
-        [JsonProperty("ecuador")]
+        [EnumMember(Value = "ecuador")]
         [Description("The Republic of Ecuador")]
         Ecuador = 65,
-        [JsonProperty("egypt")]
+        [EnumMember(Value = "egypt")]
         [Description("The Arab Republic of Egypt")]
         Egypt = 66,
-        [JsonProperty("elSalvador")]
+        [EnumMember(Value = "elSalvador")]
         [Description("The Republic of El Salvador")]
         ElSalvador = 67,
-        [JsonProperty("equatorialGuinea")]
+        [EnumMember(Value = "equatorialGuinea")]
         [Description("The Republic of Equatorial Guinea")]
         EquatorialGuinea = 68,
-        [JsonProperty("eritrea")]
+        [EnumMember(Value = "eritrea")]
         [Description("The State of Eritrea")]
         Eritrea = 69,
-        [JsonProperty("estonia")]
+        [EnumMember(Value = "estonia")]
         [Description("The Republic of Estonia")]
         Estonia = 70,
-        [JsonProperty("eswatini")]
+        [EnumMember(Value = "eswatini")]
         [Description("The Kingdom of Eswatini")]
         Eswatini = 71,
-        [JsonProperty("ethiopia")]
+        [EnumMember(Value = "ethiopia")]
         [Description("The Federal Democratic Republic of Ethiopia")]
         Ethiopia = 72,
-        [JsonProperty("falklandIslandsTheMalvinas")]
+        [EnumMember(Value = "falklandIslandsTheMalvinas")]
         [Description("The Falkland Islands")]
         FalklandIslandsTheMalvinas = 73,
-        [JsonProperty("faroeIslands")]
+        [EnumMember(Value = "faroeIslands")]
         [Description("The Faroe Islands")]
         FaroeIslands = 74,
-        [JsonProperty("fiji")]
+        [EnumMember(Value = "fiji")]
         [Description("The Republic of Fiji")]
         Fiji = 75,
-        [JsonProperty("finland")]
+        [EnumMember(Value = "finland")]
         [Description("The Republic of Finland")]
         Finland = 76,
-        [JsonProperty("france")]
+        [EnumMember(Value = "france")]
         [Description("The French Republic")]
         France = 77,
-        [JsonProperty("frenchGuiana")]
+        [EnumMember(Value = "frenchGuiana")]
         [Description("Guyane")]
         FrenchGuiana = 78,
-        [JsonProperty("frenchPolynesia")]
+        [EnumMember(Value = "frenchPolynesia")]
         [Description("French Polynesia")]
         FrenchPolynesia = 79,
-        [JsonProperty("frenchSouthernTerritories")]
+        [EnumMember(Value = "frenchSouthernTerritories")]
         [Description("The French Southern and Antarctic Lands")]
         FrenchSouthernTerritories = 80,
-        [JsonProperty("gabon")]
+        [EnumMember(Value = "gabon")]
         [Description("The Gabonese Republic")]
         Gabon = 81,
-        [JsonProperty("gambia")]
+        [EnumMember(Value = "gambia")]
         [Description("The Republic of The Gambia")]
         Gambia = 82,
-        [JsonProperty("georgia")]
+        [EnumMember(Value = "georgia")]
         [Description("Georgia")]
         Georgia = 83,
-        [JsonProperty("germany")]
+        [EnumMember(Value = "germany")]
         [Description("The Federal Republic of Germany")]
         Germany = 84,
-        [JsonProperty("ghana")]
+        [EnumMember(Value = "ghana")]
         [Description("The Republic of Ghana")]
         Ghana = 85,
-        [JsonProperty("gibraltar")]
+        [EnumMember(Value = "gibraltar")]
         [Description("Gibraltar")]
         Gibraltar = 86,
-        [JsonProperty("greece")]
+        [EnumMember(Value = "greece")]
         [Description("The Hellenic Republic")]
         Greece = 87,
-        [JsonProperty("greenland")]
+        [EnumMember(Value = "greenland")]
         [Description("Kalaallit Nunaat")]
         Greenland = 88,
-        [JsonProperty("grenada")]
+        [EnumMember(Value = "grenada")]
         [Description("Grenada")]
         Grenada = 89,
-        [JsonProperty("guadeloupe")]
+        [EnumMember(Value = "guadeloupe")]
         [Description("Guadeloupe")]
         Guadeloupe = 90,
-        [JsonProperty("guam")]
+        [EnumMember(Value = "guam")]
         [Description("The Territory of Guam")]
         Guam = 91,
-        [JsonProperty("guatemala")]
+        [EnumMember(Value = "guatemala")]
         [Description("The Republic of Guatemala")]
         Guatemala = 92,
-        [JsonProperty("guernsey")]
+        [EnumMember(Value = "guernsey")]
         [Description("The Bailiwick of Guernsey")]
         Guernsey = 93,
-        [JsonProperty("guinea")]
+        [EnumMember(Value = "guinea")]
         [Description("The Republic of Guinea")]
         Guinea = 94,
-        [JsonProperty("guineaBissau")]
+        [EnumMember(Value = "guineaBissau")]
         [Description("The Republic of Guinea-Bissau")]
         GuineaBissau = 95,
-        [JsonProperty("guyana")]
+        [EnumMember(Value = "guyana")]
         [Description("The Co-operative Republic of Guyana")]
         Guyana = 96,
-        [JsonProperty("haiti")]
+        [EnumMember(Value = "haiti")]
         [Description("The Republic of Haiti")]
         Haiti = 97,
-        [JsonProperty("heardIslandAndMcDonaldIslands")]
+        [EnumMember(Value = "heardIslandAndMcDonaldIslands")]
         [Description("The Territory of Heard Island and McDonald Islands")]
         HeardIslandAndMcDonaldIslands = 98,
-        [JsonProperty("holySee")]
+        [EnumMember(Value = "holySee")]
         [Description("The Holy See")]
         HolySee = 99,
-        [JsonProperty("honduras")]
+        [EnumMember(Value = "honduras")]
         [Description("The Republic of Honduras")]
         Honduras = 100,
-        [JsonProperty("hongKong")]
+        [EnumMember(Value = "hongKong")]
         [Description("The Hong Kong Special Administrative Region of China")]
         HongKong = 101,
-        [JsonProperty("hungary")]
+        [EnumMember(Value = "hungary")]
         [Description("Hungary")]
         Hungary = 102,
-        [JsonProperty("iceland")]
+        [EnumMember(Value = "iceland")]
         [Description("Iceland")]
         Iceland = 103,
-        [JsonProperty("india")]
+        [EnumMember(Value = "india")]
         [Description("The Republic of India")]
         India = 104,
-        [JsonProperty("indonesia")]
+        [EnumMember(Value = "indonesia")]
         [Description("The Republic of Indonesia")]
         Indonesia = 105,
-        [JsonProperty("iranIslamicRepublic")]
+        [EnumMember(Value = "iranIslamicRepublic")]
         [Description("The Islamic Republic of Iran")]
         IranIslamicRepublic = 106,
-        [JsonProperty("iraq")]
+        [EnumMember(Value = "iraq")]
         [Description("The Republic of Iraq")]
         Iraq = 107,
-        [JsonProperty("ireland")]
+        [EnumMember(Value = "ireland")]
         [Description("Ireland")]
         Ireland = 108,
-        [JsonProperty("isleOfMan")]
+        [EnumMember(Value = "isleOfMan")]
         [Description("The Isle of Man")]
         IsleOfMan = 109,
-        [JsonProperty("israel")]
+        [EnumMember(Value = "israel")]
         [Description("The State of Israel")]
         Israel = 110,
-        [JsonProperty("italy")]
+        [EnumMember(Value = "italy")]
         [Description("The Italian Republic")]
         Italy = 111,
-        [JsonProperty("jamaica")]
+        [EnumMember(Value = "jamaica")]
         [Description("Jamaica")]
         Jamaica = 112,
-        [JsonProperty("japan")]
+        [EnumMember(Value = "japan")]
         [Description("Japan")]
         Japan = 113,
-        [JsonProperty("jersey")]
+        [EnumMember(Value = "jersey")]
         [Description("The Bailiwick of Jersey")]
         Jersey = 114,
-        [JsonProperty("jordan")]
+        [EnumMember(Value = "jordan")]
         [Description("The Hashemite Kingdom of Jordan")]
         Jordan = 115,
-        [JsonProperty("kazakhstan")]
+        [EnumMember(Value = "kazakhstan")]
         [Description("The Republic of Kazakhstan")]
         Kazakhstan = 116,
-        [JsonProperty("kenya")]
+        [EnumMember(Value = "kenya")]
         [Description("The Republic of Kenya")]
         Kenya = 117,
-        [JsonProperty("kiribati")]
+        [EnumMember(Value = "kiribati")]
         [Description("The Republic of Kiribati")]
         Kiribati = 118,
-        [JsonProperty("koreaTheDemocraticPeoplesRepublic")]
+        [EnumMember(Value = "koreaTheDemocraticPeoplesRepublic")]
         [Description("The Democratic People's Republic of Korea")]
         KoreaTheDemocraticPeoplesRepublic = 119,
-        [JsonProperty("koreaTheRepublic")]
+        [EnumMember(Value = "koreaTheRepublic")]
         [Description("The Republic of Korea")]
         KoreaTheRepublic = 120,
-        [JsonProperty("kuwait")]
+        [EnumMember(Value = "kuwait")]
         [Description("The State of Kuwait")]
         Kuwait = 121,
-        [JsonProperty("kyrgyzstan")]
+        [EnumMember(Value = "kyrgyzstan")]
         [Description("The Kyrgyz Republic")]
         Kyrgyzstan = 122,
-        [JsonProperty("laoPeoplesDemocraticRepublic")]
+        [EnumMember(Value = "laoPeoplesDemocraticRepublic")]
         [Description("The Lao People's Democratic Republic")]
         LaoPeoplesDemocraticRepublic = 123,
-        [JsonProperty("latvia")]
+        [EnumMember(Value = "latvia")]
         [Description("The Republic of Latvia")]
         Latvia = 124,
-        [JsonProperty("lebanon")]
+        [EnumMember(Value = "lebanon")]
         [Description("The Lebanese Republic")]
         Lebanon = 125,
-        [JsonProperty("lesotho")]
+        [EnumMember(Value = "lesotho")]
         [Description("The Kingdom of Lesotho")]
         Lesotho = 126,
-        [JsonProperty("liberia")]
+        [EnumMember(Value = "liberia")]
         [Description("The Republic of Liberia")]
         Liberia = 127,
-        [JsonProperty("libya")]
+        [EnumMember(Value = "libya")]
         [Description("The State of Libya")]
         Libya = 128,
-        [JsonProperty("liechtenstein")]
+        [EnumMember(Value = "liechtenstein")]
         [Description("The Principality of Liechtenstein")]
         Liechtenstein = 129,
-        [JsonProperty("lithuania")]
+        [EnumMember(Value = "lithuania")]
         [Description("The Republic of Lithuania")]
         Lithuania = 130,
-        [JsonProperty("luxembourg")]
+        [EnumMember(Value = "luxembourg")]
         [Description("The Grand Duchy of Luxembourg")]
         Luxembourg = 131,
-        [JsonProperty("macao")]
+        [EnumMember(Value = "macao")]
         [Description("Macao Special Administrative Region of China")]
         Macao = 132,
-        [JsonProperty("northMacedonia")]
+        [EnumMember(Value = "northMacedonia")]
         [Description("Republic of North Macedonia")]
         NorthMacedonia = 133,
-        [JsonProperty("madagascar")]
+        [EnumMember(Value = "madagascar")]
         [Description("The Republic of Madagascar")]
         Madagascar = 134,
-        [JsonProperty("malawi")]
+        [EnumMember(Value = "malawi")]
         [Description("The Republic of Malawi")]
         Malawi = 135,
-        [JsonProperty("malaysia")]
+        [EnumMember(Value = "malaysia")]
         [Description("Malaysia")]
         Malaysia = 136,
-        [JsonProperty("maldives")]
+        [EnumMember(Value = "maldives")]
         [Description("The Republic of Maldives")]
         Maldives = 137,
-        [JsonProperty("mali")]
+        [EnumMember(Value = "mali")]
         [Description("The Republic of Mali")]
         Mali = 138,
-        [JsonProperty("malta")]
+        [EnumMember(Value = "malta")]
         [Description("The Republic of Malta")]
         Malta = 139,
-        [JsonProperty("marshallIslands")]
+        [EnumMember(Value = "marshallIslands")]
         [Description("The Republic of the Marshall Islands")]
         MarshallIslands = 140,
-        [JsonProperty("martinique")]
+        [EnumMember(Value = "martinique")]
         [Description("Martinique")]
         Martinique = 141,
-        [JsonProperty("mauritania")]
+        [EnumMember(Value = "mauritania")]
         [Description("The Islamic Republic of Mauritania")]
         Mauritania = 142,
-        [JsonProperty("mauritius")]
+        [EnumMember(Value = "mauritius")]
         [Description("The Republic of Mauritius")]
         Mauritius = 143,
-        [JsonProperty("mayotte")]
+        [EnumMember(Value = "mayotte")]
         [Description("The Department of Mayotte")]
         Mayotte = 144,
-        [JsonProperty("mexico")]
+        [EnumMember(Value = "mexico")]
         [Description("The United Mexican States")]
         Mexico = 145,
-        [JsonProperty("micronesiaFederatedStates")]
+        [EnumMember(Value = "micronesiaFederatedStates")]
         [Description("The Federated States of Micronesia")]
         MicronesiaFederatedStates = 146,
-        [JsonProperty("moldovaTheRepublic")]
+        [EnumMember(Value = "moldovaTheRepublic")]
         [Description("The Republic of Moldova")]
         MoldovaTheRepublic = 147,
-        [JsonProperty("monaco")]
+        [EnumMember(Value = "monaco")]
         [Description("The Principality of Monaco")]
         Monaco = 148,
-        [JsonProperty("mongolia")]
+        [EnumMember(Value = "mongolia")]
         [Description("The State of Mongolia")]
         Mongolia = 149,
-        [JsonProperty("montenegro")]
+        [EnumMember(Value = "montenegro")]
         [Description("Montenegro")]
         Montenegro = 150,
-        [JsonProperty("montserrat")]
+        [EnumMember(Value = "montserrat")]
         [Description("Montserrat")]
         Montserrat = 151,
-        [JsonProperty("morocco")]
+        [EnumMember(Value = "morocco")]
         [Description("The Kingdom of Morocco")]
         Morocco = 152,
-        [JsonProperty("mozambique")]
+        [EnumMember(Value = "mozambique")]
         [Description("The Republic of Mozambique")]
         Mozambique = 153,
-        [JsonProperty("myanmar")]
+        [EnumMember(Value = "myanmar")]
         [Description("The Republic of the Union of Myanmar")]
         Myanmar = 154,
-        [JsonProperty("namibia")]
+        [EnumMember(Value = "namibia")]
         [Description("The Republic of Namibia")]
         Namibia = 155,
-        [JsonProperty("nauru")]
+        [EnumMember(Value = "nauru")]
         [Description("The Republic of Nauru")]
         Nauru = 156,
-        [JsonProperty("nepal")]
+        [EnumMember(Value = "nepal")]
         [Description("The Federal Democratic Republic of Nepal")]
         Nepal = 157,
-        [JsonProperty("netherlands")]
+        [EnumMember(Value = "netherlands")]
         [Description("The Kingdom of the Netherlands")]
         Netherlands = 158,
-        [JsonProperty("newCaledonia")]
+        [EnumMember(Value = "newCaledonia")]
         [Description("New Caledonia")]
         NewCaledonia = 159,
-        [JsonProperty("newZealand")]
+        [EnumMember(Value = "newZealand")]
         [Description("New Zealand")]
         NewZealand = 160,
-        [JsonProperty("nicaragua")]
+        [EnumMember(Value = "nicaragua")]
         [Description("The Republic of Nicaragua")]
         Nicaragua = 161,
-        [JsonProperty("niger")]
+        [EnumMember(Value = "niger")]
         [Description("The Republic of the Niger")]
         Niger = 162,
-        [JsonProperty("nigeria")]
+        [EnumMember(Value = "nigeria")]
         [Description("The Federal Republic of Nigeria")]
         Nigeria = 163,
-        [JsonProperty("niue")]
+        [EnumMember(Value = "niue")]
         [Description("Niue")]
         Niue = 164,
-        [JsonProperty("norfolkIsland")]
+        [EnumMember(Value = "norfolkIsland")]
         [Description("The Territory of Norfolk Island")]
         NorfolkIsland = 165,
-        [JsonProperty("northernMarianaIslands")]
+        [EnumMember(Value = "northernMarianaIslands")]
         [Description("The Commonwealth of the Northern Mariana Islands")]
         NorthernMarianaIslands = 166,
-        [JsonProperty("norway")]
+        [EnumMember(Value = "norway")]
         [Description("The Kingdom of Norway")]
         Norway = 167,
-        [JsonProperty("oman")]
+        [EnumMember(Value = "oman")]
         [Description("The Sultanate of Oman")]
         Oman = 168,
-        [JsonProperty("pakistan")]
+        [EnumMember(Value = "pakistan")]
         [Description("The Islamic Republic of Pakistan")]
         Pakistan = 169,
-        [JsonProperty("palau")]
+        [EnumMember(Value = "palau")]
         [Description("The Republic of Palau")]
         Palau = 170,
-        [JsonProperty("palestineState")]
+        [EnumMember(Value = "palestineState")]
         [Description("The State of Palestine")]
         PalestineState = 171,
-        [JsonProperty("panama")]
+        [EnumMember(Value = "panama")]
         [Description("The Republic of Panamá")]
         Panama = 172,
-        [JsonProperty("papuaNewGuinea")]
+        [EnumMember(Value = "papuaNewGuinea")]
         [Description("The Independent State of Papua New Guinea")]
         PapuaNewGuinea = 173,
-        [JsonProperty("paraguay")]
+        [EnumMember(Value = "paraguay")]
         [Description("The Republic of Paraguay")]
         Paraguay = 174,
-        [JsonProperty("peru")]
+        [EnumMember(Value = "peru")]
         [Description("The Republic of Perú")]
         Peru = 175,
-        [JsonProperty("philippines")]
+        [EnumMember(Value = "philippines")]
         [Description("The Republic of the Philippines")]
         Philippines = 176,
-        [JsonProperty("pitcairn")]
+        [EnumMember(Value = "pitcairn")]
         [Description("The Pitcairn, Henderson, Ducie and Oeno Islands")]
         Pitcairn = 177,
-        [JsonProperty("poland")]
+        [EnumMember(Value = "poland")]
         [Description("The Republic of Poland")]
         Poland = 178,
-        [JsonProperty("portugal")]
+        [EnumMember(Value = "portugal")]
         [Description("The Portuguese Republic")]
         Portugal = 179,
-        [JsonProperty("puertoRico")]
+        [EnumMember(Value = "puertoRico")]
         [Description("The Commonwealth of Puerto Rico")]
         PuertoRico = 180,
-        [JsonProperty("qatar")]
+        [EnumMember(Value = "qatar")]
         [Description("The State of Qatar")]
         Qatar = 181,
-        [JsonProperty("reunion")]
+        [EnumMember(Value = "reunion")]
         [Description("Réunion")]
         Reunion = 182,
-        [JsonProperty("romania")]
+        [EnumMember(Value = "romania")]
         [Description("Romania")]
         Romania = 183,
-        [JsonProperty("russianFederation")]
+        [EnumMember(Value = "russianFederation")]
         [Description("The Russian Federation")]
         RussianFederation = 184,
-        [JsonProperty("rwanda")]
+        [EnumMember(Value = "rwanda")]
         [Description("The Republic of Rwanda")]
         Rwanda = 185,
-        [JsonProperty("saintBarthelemy")]
+        [EnumMember(Value = "saintBarthelemy")]
         [Description("The Collectivity of Saint-Barthélemy")]
         SaintBarthelemy = 186,
-        [JsonProperty("saintHelena")]
+        [EnumMember(Value = "saintHelena")]
         [Description("Saint Helena, Ascension and Tristan da Cunha")]
         SaintHelena = 187,
-        [JsonProperty("saintKittsandNevis")]
+        [EnumMember(Value = "saintKittsandNevis")]
         [Description("Saint Kitts and Nevis")]
         SaintKittsandNevis = 188,
-        [JsonProperty("saintLucia")]
+        [EnumMember(Value = "saintLucia")]
         [Description("Saint Lucia")]
         SaintLucia = 189,
-        [JsonProperty("saintMartinFrenchPart")]
+        [EnumMember(Value = "saintMartinFrenchPart")]
         [Description("The Collectivity of Saint-Martin")]
         SaintMartinFrenchPart = 190,
-        [JsonProperty("saintPierreAndMiquelon")]
+        [EnumMember(Value = "saintPierreAndMiquelon")]
         [Description("The Overseas Collectivity of Saint-Pierre and Miquelon")]
         SaintPierreAndMiquelon = 191,
-        [JsonProperty("saintVincentAndTheGrenadines")]
+        [EnumMember(Value = "saintVincentAndTheGrenadines")]
         [Description("Saint Vincent and the Grenadines")]
         SaintVincentAndTheGrenadines = 192,
-        [JsonProperty("samoa")]
+        [EnumMember(Value = "samoa")]
         [Description("The Independent State of Samoa")]
         Samoa = 193,
-        [JsonProperty("sanMarino")]
+        [EnumMember(Value = "sanMarino")]
         [Description("The Republic of San Marino")]
         SanMarino = 194,
-        [JsonProperty("saoTomeAndPrincipe")]
+        [EnumMember(Value = "saoTomeAndPrincipe")]
         [Description("The Democratic Republic of São Tomé and Príncipe")]
         SaoTomeAndPrincipe = 195,
-        [JsonProperty("saudiArabia")]
+        [EnumMember(Value = "saudiArabia")]
         [Description("The Kingdom of Saudi Arabia")]
         SaudiArabia = 196,
-        [JsonProperty("senegal")]
+        [EnumMember(Value = "senegal")]
         [Description("The Republic of Senegal")]
         Senegal = 197,
-        [JsonProperty("serbia")]
+        [EnumMember(Value = "serbia")]
         [Description("The Republic of Serbia")]
         Serbia = 198,
-        [JsonProperty("seychelles")]
+        [EnumMember(Value = "seychelles")]
         [Description("The Republic of Seychelles")]
         Seychelles = 199,
-        [JsonProperty("sierraLeone")]
+        [EnumMember(Value = "sierraLeone")]
         [Description("The Republic of Sierra Leone")]
         SierraLeone = 200,
-        [JsonProperty("singapore")]
+        [EnumMember(Value = "singapore")]
         [Description("The Republic of Singapore")]
         Singapore = 201,
-        [JsonProperty("sintMaartenDutchPart")]
+        [EnumMember(Value = "sintMaartenDutchPart")]
         [Description("Sint Maarten")]
         SintMaartenDutchPart = 202,
-        [JsonProperty("slovakia")]
+        [EnumMember(Value = "slovakia")]
         [Description("The Slovak Republic")]
         Slovakia = 203,
-        [JsonProperty("slovenia")]
+        [EnumMember(Value = "slovenia")]
         [Description("The Republic of Slovenia")]
         Slovenia = 204,
-        [JsonProperty("solomonIslands")]
+        [EnumMember(Value = "solomonIslands")]
         [Description("The Solomon Islands")]
         SolomonIslands = 205,
-        [JsonProperty("somalia")]
+        [EnumMember(Value = "somalia")]
         [Description("The Federal Republic of Somalia")]
         Somalia = 206,
-        [JsonProperty("southAfrica")]
+        [EnumMember(Value = "southAfrica")]
         [Description("The Republic of South Africa")]
         SouthAfrica = 207,
-        [JsonProperty("southGeorgiaAndTheSouthSandwichIslands")]
+        [EnumMember(Value = "southGeorgiaAndTheSouthSandwichIslands")]
         [Description("South Georgia and the South Sandwich Islands")]
         SouthGeorgiaAndTheSouthSandwichIslands = 208,
-        [JsonProperty("southSudan")]
+        [EnumMember(Value = "southSudan")]
         [Description("The Republic of South Sudan")]
         SouthSudan = 209,
-        [JsonProperty("spain")]
+        [EnumMember(Value = "spain")]
         [Description("The Kingdom of Spain")]
         Spain = 210,
-        [JsonProperty("sriLanka")]
+        [EnumMember(Value = "sriLanka")]
         [Description("The Democratic Socialist Republic of Sri Lanka")]
         SriLanka = 211,
-        [JsonProperty("sudan")]
+        [EnumMember(Value = "sudan")]
         [Description("The Republic of the Sudan")]
         Sudan = 212,
-        [JsonProperty("suriname")]
+        [EnumMember(Value = "suriname")]
         [Description("The Republic of Suriname")]
         Suriname = 213,
-        [JsonProperty("svalbard")]
+        [EnumMember(Value = "svalbard")]
         [Description("Svalbard and Jan Mayen")]
         Svalbard = 214,
-        [JsonProperty("sweden")]
+        [EnumMember(Value = "sweden")]
         [Description("The Kingdom of Sweden")]
         Sweden = 215,
-        [JsonProperty("switzerland")]
+        [EnumMember(Value = "switzerland")]
         [Description("The Swiss Confederation")]
         Switzerland = 216,
-        [JsonProperty("syrianArabRepublic")]
+        [EnumMember(Value = "syrianArabRepublic")]
         [Description("The Syrian Arab Republic")]
         SyrianArabRepublic = 217,
-        [JsonProperty("taiwanProvinceOfChina")]
+        [EnumMember(Value = "taiwanProvinceOfChina")]
         [Description("The Republic of China")]
         TaiwanProvinceOfChina = 218,
-        [JsonProperty("tajikistan")]
+        [EnumMember(Value = "tajikistan")]
         [Description("The Republic of Tajikistan")]
         Tajikistan = 219,
-        [JsonProperty("tanzaniaTheUnitedRepublic")]
+        [EnumMember(Value = "tanzaniaTheUnitedRepublic")]
         [Description("The United Republic of Tanzania")]
         TanzaniaTheUnitedRepublic = 220,
-        [JsonProperty("thailand")]
+        [EnumMember(Value = "thailand")]
         [Description("The Kingdom of Thailand")]
         Thailand = 221,
-        [JsonProperty("timorLeste")]
+        [EnumMember(Value = "timorLeste")]
         [Description("The Democratic Republic of Timor-Leste")]
         TimorLeste = 222,
-        [JsonProperty("togo")]
+        [EnumMember(Value = "togo")]
         [Description("The Togolese Republic")]
         Togo = 223,
-        [JsonProperty("tokelau")]
+        [EnumMember(Value = "tokelau")]
         [Description("Tokelau")]
         Tokelau = 224,
-        [JsonProperty("tonga")]
+        [EnumMember(Value = "tonga")]
         [Description("The Kingdom of Tonga")]
         Tonga = 225,
-        [JsonProperty("trinidadAndTobago")]
+        [EnumMember(Value = "trinidadAndTobago")]
         [Description("The Republic of Trinidad and Tobago")]
         TrinidadAndTobago = 226,
-        [JsonProperty("tunisia")]
+        [EnumMember(Value = "tunisia")]
         [Description("The Republic of Tunisia")]
         Tunisia = 227,
-        [JsonProperty("turkey")]
+        [EnumMember(Value = "turkey")]
         [Description("The Republic of Turkey")]
         Turkey = 228,
-        [JsonProperty("turkmenistan")]
+        [EnumMember(Value = "turkmenistan")]
         [Description("Turkmenistan")]
         Turkmenistan = 229,
-        [JsonProperty("turksAndCaicosIslands")]
+        [EnumMember(Value = "turksAndCaicosIslands")]
         [Description("The Turks and Caicos Islands")]
         TurksAndCaicosIslands = 230,
-        [JsonProperty("tuvalu")]
+        [EnumMember(Value = "tuvalu")]
         [Description("Tuvalu")]
         Tuvalu = 231,
-        [JsonProperty("uganda")]
+        [EnumMember(Value = "uganda")]
         [Description("The Republic of Uganda")]
         Uganda = 232,
-        [JsonProperty("ukraine")]
+        [EnumMember(Value = "ukraine")]
         [Description("Ukraine")]
         Ukraine = 233,
-        [JsonProperty("unitedArabEmirates")]
+        [EnumMember(Value = "unitedArabEmirates")]
         [Description("The United Arab Emirates")]
         UnitedArabEmirates = 234,
-        [JsonProperty("unitedKingdom")]
+        [EnumMember(Value = "unitedKingdom")]
         [Description("The United Kingdom of Great Britain and Northern Ireland")]
         UnitedKingdom = 235,
-        [JsonProperty("unitedStatesMinorOutlyingIslands")]
+        [EnumMember(Value = "unitedStatesMinorOutlyingIslands")]
         [Description("Baker Island")]
         UnitedStatesMinorOutlyingIslands = 236,
-        [JsonProperty("unitedStatesOfAmerica")]
+        [EnumMember(Value = "unitedStatesOfAmerica")]
         [Description("The United States of America")]
         UnitedStatesOfAmerica = 237,
-        [JsonProperty("uruguay")]
+        [EnumMember(Value = "uruguay")]
         [Description("The Oriental Republic of Uruguay")]
         Uruguay = 238,
-        [JsonProperty("uzbekistan")]
+        [EnumMember(Value = "uzbekistan")]
         [Description("The Republic of Uzbekistan")]
         Uzbekistan = 239,
-        [JsonProperty("vanuatu")]
+        [EnumMember(Value = "vanuatu")]
         [Description("The Republic of Vanuatu")]
         Vanuatu = 240,
-        [JsonProperty("venezuelaBolivarianRepublic")]
+        [EnumMember(Value = "venezuelaBolivarianRepublic")]
         [Description("The Bolivarian Republic of Venezuela")]
         VenezuelaBolivarianRepublic = 241,
-        [JsonProperty("vietNam")]
+        [EnumMember(Value = "vietNam")]
         [Description("The Socialist Republic of Viet Nam")]
         VietNam = 242,
-        [JsonProperty("virginIslandsBritish")]
+        [EnumMember(Value = "virginIslandsBritish")]
         [Description("The Virgin Islands")]
         VirginIslandsBritish = 243,
-        [JsonProperty("virginIslandsUS")]
+        [EnumMember(Value = "virginIslandsUS")]
         [Description("The Virgin Islands of the United States")]
         VirginIslandsUS = 244,
-        [JsonProperty("wallisAndFutuna")]
+        [EnumMember(Value = "wallisAndFutuna")]
         [Description("The Territory of the Wallis and Futuna Islands")]
         WallisAndFutuna = 245,
-        [JsonProperty("westernSahara")]
+        [EnumMember(Value = "westernSahara")]
         [Description("The Sahrawi Arab Democratic Republic")]
         WesternSahara = 246,
-        [JsonProperty("yemen")]
+        [EnumMember(Value = "yemen")]
         [Description("The Republic of Yemen")]
         Yemen = 247,
-        [JsonProperty("zambia")]
+        [EnumMember(Value = "zambia")]
         [Description("The Republic of Zambia")]
         Zambia = 248,
-        [JsonProperty("zimbabwe")]
+        [EnumMember(Value = "zimbabwe")]
         [Description("The Republic of Zimbabwe")]
         Zimbabwe = 249,
     }
