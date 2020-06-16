@@ -4,6 +4,7 @@ Created from the country data exttracted from [Wikipedia](https://en.wikipedia.o
 
 Provides a few methods to get the country name, official state name, the countries ISO 3166-1 codes namely the Alpha-2, Alpha-3 and Numeric code.
 
-Some static helper are provided.
+Some static helper are provided as show below.
+![Extension Methods](https://raw.githubusercontent.com/Jayman1305/System.Enums.Country/master/Extensions.png)
 
 
