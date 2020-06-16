@@ -26,6 +26,12 @@ in the case of convert to and from JSOn, i have included a CountryConverter that
                 .Where(countryEnum => countryEnum == Country.UnitedStatesOfAmerica || countryEnum == Country.UnitedKingdom).ToList();
             var json = JsonConvert.SerializeObject(countries, Converter.Settings);
             var newCountries = JsonConvert.DeserializeObject<List<Country>>(json, Converter.Settings);
+            
+            //Validate USA post code
+            var usa = Country.UnitedStatesOfAmerica;
+            var r = new Regex(usa.GetPostalCodeRegex());
+            var postalCodeValid = r.IsMatch("85001");
+            var postalCodeInvalid = r.IsMatch("85001A");
         }
 
         public static class Converter
